@@ -1,0 +1,57 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    display-drun: " Apps";
+    drun-display-format: "{icon}  {name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+@theme "gruvbox-dark"
+
+* {
+    border: 0;
+    border-radius: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    width: 550px;
+    transparency: "real";
+    background-color: rgba(29,32,33,0.82);
+    border: 1px;
+    border-color: #3c3836;
+    border-radius: 14px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 12px;
+    padding: 18px;
+    background-color: transparent;
+}
+
+inputbar {
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(40,40,40,0.85);
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    spacing: 8px;
+    scrollbar: false;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: rgba(80,73,69,0.90);
+}
